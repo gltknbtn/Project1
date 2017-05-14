@@ -1,5 +1,7 @@
 package project1;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
@@ -16,8 +18,14 @@ public class Main {
 		System.out.println("Hello " + "'"+name+" "+surname+"'" +",\nwelcome to Java world");
 		scan.close();
 		
-		System.out.println("Program ended!!!");
 		
+		System.out.println(getTimeStamp() + " -> Program ended!!!");
+		
+	}
+	
+	public static String getTimeStamp(){
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		return sdf.format(new Date());
 	}
 
 }
