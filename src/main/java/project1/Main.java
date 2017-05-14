@@ -25,7 +25,13 @@ public class Main {
 	
 	public static String getTimeStamp(){
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-		String timestamp = sdf.format(new Date());
+		String timestamp = "";
+		try {
+			timestamp = sdf.format(new Date());
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		return timestamp ;
 	}
 
