@@ -16,6 +16,8 @@ public class Main {
 		System.out.println("Hello " + "'"+name+" "+surname+"'" +",\nwelcome to Java world");
 		scan.close();
 		
+		System.out.println("Program ended!!!");
+		
 	}
 
 }
