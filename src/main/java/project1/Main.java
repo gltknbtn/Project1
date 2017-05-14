@@ -10,7 +10,10 @@ public class Main {
 		System.out.println("what is your name: ");
 		String name = scan.nextLine();
 		
-		System.out.println("Hello: " + name +", welcome to Java world");
+		System.out.println("what is your surname: ");
+		String surname = scan.nextLine();
+		
+		System.out.println("Hello " + "'"+name+" "+surname+"'" +",\nwelcome to Java world");
 		scan.close();
 		
 	}
